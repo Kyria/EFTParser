@@ -41,12 +41,14 @@ class EFTParser(object):
             ]
         }
         """
-    
-            
+        
+                
         fit_lines = eft_textblock.strip().splitlines()
         
         module_list      = []
         cargodrone_list  = []
+        ship_type        = ''
+        fit_name         = ''
 
         for line in fit_lines:
             # we start with stripping white spaces
